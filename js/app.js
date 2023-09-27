@@ -93,15 +93,39 @@ console.log(sumArray(someNums));
 /* 5.
 /* =====================*/
 // use same someNums as in #4
-// function multiplyArray(array) {
-//   let total = 1;
-//   array.forEach(num => total *= num);
-//   return total;
-// }
-// console.log(multiplyArray(someNums)); // 7! === 5040
+function multiplyArray(array) {
+  let total = 1;
+  array.forEach(num => total *= num);
+  return total;
+}
+console.log(multiplyArray(someNums)); // 7! === 5040
 
 // alt with Array.reduce (starting at 1)
-let multipliedNums = someNums.reduce((currentVal, currentTotal) => 
-  currentTotal *= currentVal, 1
-);
-console.log(multipliedNums);
+// let multipliedNums = someNums.reduce((currentVal, currentTotal) => 
+//   currentTotal *= currentVal, 1
+// );
+// console.log(multipliedNums);
+
+
+/* =======================
+/* 6.
+/* =====================*/
+let numArgs = function(...args) {
+  return args.length
+}
+console.log(numArgs([], {}, "", 0, 1));
+
+
+/* =======================
+/* 7.
+/* =====================*/
+
+
+/* =======================
+/* 8.
+/* =====================*/
+
+
+/* =======================
+/* 9.
+/* =====================*/
