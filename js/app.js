@@ -54,7 +54,16 @@ let maxOfThree = function(num1, num2, num3) {
   if (num3 >= num1) {
     max = num3;
   }
-
+  
   return max;
 }
 console.log(maxOfThree(12,13,13.1));
+
+
+/* =======================
+/* 3.
+/* =====================*/
+function isCharAVowel(char) {
+  return ['a','e','i','o','u'].includes(char);
+}
+console.log(isCharAVowel('q'));
