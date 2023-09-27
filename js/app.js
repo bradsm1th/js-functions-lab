@@ -64,9 +64,9 @@ console.log(maxOfThree(12,13,13.1));
 /* 3.
 /* =====================*/
 function isCharAVowel(char) {
-  return ['a','e','i','o','u'].includes(char);
+  return ['a','e','i','o','u'].includes(char.toLowerCase());
 }
-console.log(isCharAVowel('q'));
+console.log(isCharAVowel('A'));
 
 
 /* =======================
@@ -88,3 +88,13 @@ console.log(sumArray(someNums));
 //   )
 // console.log(reducedSum);
 
+
+/* =======================
+/* 5.
+/* =====================*/
+// use same someNums as in #4
+function multiplyArray(array) {
+  
+}
+
+// alt with Array.reduce
