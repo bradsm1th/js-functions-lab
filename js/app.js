@@ -67,3 +67,24 @@ function isCharAVowel(char) {
   return ['a','e','i','o','u'].includes(char);
 }
 console.log(isCharAVowel('q'));
+
+
+/* =======================
+/* 4.
+/* =====================*/
+const someNums = [1,2,3,4,5,6,7];
+let sumArray = function(array) {
+  let total = 0;
+  array.forEach(num => {
+    total += num;
+  })
+  return total;
+}
+console.log(sumArray(someNums));
+
+// alt with Array.reduce
+// let reducedSum = someNums.reduce((currentElement, runningTotal) =>
+//   runningTotal += currentElement, 0
+//   )
+// console.log(reducedSum);
+
