@@ -17,3 +17,7 @@ function sayGoodbye(phrase, name) {
   console.log(`${phrase}, ${name}!`);
 }
 sayGoodbye("See ya", 'Dwayne "The Rock" Johnson');
+
+function add(num1, num2) {
+  console.log(num1 + num2);
+}
