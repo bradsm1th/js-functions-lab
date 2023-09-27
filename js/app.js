@@ -46,3 +46,15 @@ console.log(maxOfTwoNumbers(135, 15));
 /* =======================
 /* 2.
 /* =====================*/
+let maxOfThree = function(num1, num2, num3) {
+  let max = num1;
+  if (num2 >= num1) {
+    max = num2;
+  }
+  if (num3 >= num1) {
+    max = num3;
+  }
+
+  return max;
+}
+console.log(maxOfThree(12,13,13.1));
