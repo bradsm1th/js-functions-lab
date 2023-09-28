@@ -140,6 +140,17 @@ console.log(reverseString("hi I'm brad!"));
 /* =======================
 /* 8.
 /* =====================*/
+let longestStringInArray = function(array) {
+  let longestString = array[0];
+  for (let each of array) {
+    if (each.length > longestString.length) {
+      longestLength = each.length;
+      // longestString = array.indexOf(each);
+    }
+  }
+  return `The longest string in the array is ${longestLength} characters long...(That string is ???)`
+}
+console.log(longestStringInArray(['a', 'abc', 'asdf;ljwaeasdf549864531rlkaj']));
 
 
 /* =======================
