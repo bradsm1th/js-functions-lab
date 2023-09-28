@@ -46,7 +46,7 @@ console.log(maxOfTwoNumbers(135, 15));
 /* =======================
 /* 2.
 /* =====================*/
-let maxOfThree = function(num1, num2, num3) {
+let maxOfThree = function (num1, num2, num3) {
   let max = num1;
   if (num2 >= num1) {
     max = num2;
@@ -54,17 +54,17 @@ let maxOfThree = function(num1, num2, num3) {
   if (num3 >= num1) {
     max = num3;
   }
-  
+
   return max;
 }
-console.log(maxOfThree(12,13,13.1));
+console.log(maxOfThree(12, 13, 13.1));
 
 
 /* =======================
 /* 3.
 /* =====================*/
 function isCharAVowel(char) {
-  return ['a','e','i','o','u'].includes(char.toLowerCase());
+  return ['a', 'e', 'i', 'o', 'u'].includes(char.toLowerCase());
 }
 console.log(isCharAVowel('A'));
 
@@ -72,8 +72,8 @@ console.log(isCharAVowel('A'));
 /* =======================
 /* 4.
 /* =====================*/
-const someNums = [1,2,3,4,5,6,7];
-let sumArray = function(array) {
+const someNums = [1, 2, 3, 4, 5, 6, 7];
+let sumArray = function (array) {
   let total = 0;
   array.forEach(num => {
     total += num;
@@ -110,7 +110,7 @@ console.log(multiplyArray(someNums)); // 7! === 5040
 /* =======================
 /* 6.
 /* =====================*/
-let numArgs = function(...args) {
+let numArgs = function (...args) {
   return args.length
 }
 console.log(numArgs([], {}, "", 0, 1));
@@ -119,6 +119,22 @@ console.log(numArgs([], {}, "", 0, 1));
 /* =======================
 /* 7.
 /* =====================*/
+// one way
+function reverseString(aString) {
+  return Array.from(aString).reverse().join("");
+}
+
+// alt. a harder/manual way
+// function reverseString(aString) {
+//   let newString = [];
+//   let arrayOfString = Array.from(aString);
+//   for (let char of arrayOfString) {
+//     newString.unshift(char);
+//   }
+//   return newString.join("");
+// }
+
+console.log(reverseString("hi I'm brad!"));
 
 
 /* =======================
