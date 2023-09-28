@@ -156,3 +156,10 @@ console.log(longestStringInArray(['a', 'abc', 'pickle weasel']));
 /* =======================
 /* 9.
 /* =====================*/
+function stringsLongerThan(array, stringLength) {
+  let result = array.filter((element) => element.length > stringLength);
+  return result;
+}
+
+let testArray = ['say', 'hello', 'in', 'the', 'morning'];
+console.log(stringsLongerThan(testArray, 3));
