@@ -145,12 +145,12 @@ let longestStringInArray = function(array) {
   for (let each of array) {
     if (each.length > longestString.length) {
       longestLength = each.length;
-      // longestString = array.indexOf(each);
+      longestString = array[array.indexOf(each)];
     }
   }
-  return `The longest string in the array is ${longestLength} characters long...(That string is ???)`
+  return `The longest string in the array is '${longestString}'. It's ${longestLength} characters long.`
 }
-console.log(longestStringInArray(['a', 'abc', 'asdf;ljwaeasdf549864531rlkaj']));
+console.log(longestStringInArray(['a', 'abc', 'pickle weasel']));
 
 
 /* =======================
