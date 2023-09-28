@@ -163,3 +163,18 @@ function stringsLongerThan(array, stringLength) {
 
 let testArray = ['say', 'hello', 'in', 'the', 'morning'];
 console.log(stringsLongerThan(testArray, 3));
+
+
+// alt without filter()
+function alt(array, length) {
+  let result = [];
+
+  array.forEach(string => {
+    if (string.length > length) {
+      result.push(string);
+    }
+  })
+
+  return result;
+}
+console.log(alt(testArray, 2));
